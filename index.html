@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<link rel="website icon" type="png"
+href="images/logo.png"
+
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite2Site</title>
+  <style>
+    /* Loading screen styles */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+      z-index: 9999;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .loading-screen.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loading-icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border: 4px solid #333;
+      border-top-color: #999;
+      border-radius: 50%;
+      animation: spin 1s infinite linear;
+      margin-bottom: 20px;
+    }
+
+    .loading-message {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .loading-dots {
+      font-size: 14px;
+      line-height: 1;
+      display: inline-block;
+      animation: moveUpDown 1s infinite linear;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <script>
+    // JavaScript to simulate the loading process
+    document.addEventListener("DOMContentLoaded", function(event) {
+      // Simulating the loading process
+      setTimeout(function() {
+        var loadingScreen = document.querySelector(".loading-screen");
+        loadingScreen.classList.add("fade-out");
+      }, 2000);
+    });
+  </script>
+</head>
+<body>
+  <!-- Loading screen markup -->
+  <div class="loading-screen">
+    <div class="loading-icon"></div>
+    <div class="loading-message" style="font-family: 'Montserrat', sans-serif;">Welcome! We are now loading your page<span class="loading-dots">...</span></div>
+  </div>
+
+  <!-- Your website content goes here -->
+
+  
+  <html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite2Site</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" alt="logo">
+        <h1>Elite2Site</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">Proxy</a></li>
+            <li><a href="page2.html">Games</a></li>
+            <li><a href="page3.html">More</a></li>
+            <li><a href="page2.html">...</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+    
+<html>
+  <head>
+    <title>Toggle Dark Mode Button</title>
+    <style>
+      /* Default styles */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      /* Button styles */
+      .dark-mode-button {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 999;
+      }
+
+      /* Button styles on scroll */
+      .dark-mode-button.scroll {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #111;
+        color: #fff;
+      }
+    </style>
+    <script>
+      // JavaScript to toggle the "scroll" class on the button
+      window.addEventListener("scroll", function() {
+        var button = document.querySelector(".dark-mode-button");
+        var scrollPosition = window.scrollY;
+        if (scrollPosition > 100) {
+          button.classList.add("scroll");
+        } else {
+          button.classList.remove("scroll");
+        }
+      });
+
+      // JavaScript to toggle dark mode
+      function toggleDarkMode() {
+        var body = document.querySelector("body");
+        body.classList.toggle("dark-mode");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Toggle Dark Mode Button -->
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+     </body>
+</html>
+
+
+<head>
+  <style>
+    body {
+      padding-top: 15%; /* Adjust the top padding to position the text */
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <html>
+<head>
+    <style>
+        body {
+            height: 2000px; /* Adjust the height as per your content */
+        }
+
+        .content {
+            margin: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<html>
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <style>
+    p {
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px; /* Adjust the font size as desired */
+    }
+  </style>
+</head>
+<body>
+  <img src="images/Home Logo.png" alt="Home Logo" class="thumbnail">
+  <p>Make sure to join the <a href="https://discord.gg/GUBhGWgY5c" target="_blank">discord</a>.</p>
+</body>
+</html>
+
+
+  <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <style>
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #28282B;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer img {
+      height: 30px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: bold;
+      margin-right: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #FF5148;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your website content here -->
+
+  <div class="footer">
+    <img src="images/logo.png" alt="Logo">
+    <a href="https://www.youtube.com/channel/UCAeorITF-z2Q8glrtijhJDA" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@elitepengun" target="_blank">TikTok</a>
+    <!-- Add more social buttons as needed -->
+  </div>
+</body>
+</html>
+
+<div class="counter">Total Visitors: <span id="counterValue">0</span></div>
