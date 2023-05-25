@@ -289,5 +289,47 @@ href="images/logo.png"
   </div>
 </body>
 </html>
+    
+    <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    .counter {
+      animation: pulse 1s infinite;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Visitor Counter</h1>
+  <p class="counter" id="counter">0</p>
 
-<div class="counter">Total Visitors: <span id="counterValue">0</span></div>
+  <script>
+    // Update visitor counter
+    function updateCounter() {
+      var counterElement = document.getElementById("counter");
+      var counter = parseInt(counterElement.innerText);
+      counter++;
+      counterElement.innerText = counter;
+    }
+
+    // Call the updateCounter function when the page loads
+    window.onload = function() {
+      updateCounter();
+    };
+  </script>
+</body>
+</html>
