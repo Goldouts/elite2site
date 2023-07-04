@@ -4,14 +4,14 @@
     text-align: center;
 }
 
-.bypass-container {
+.container {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.bypass-button {
+.button {
     width: 220px;
     height: 40px;
     border-radius: 12px;
@@ -21,12 +21,12 @@
     transition: background-color 500ms, transform 500ms;
 }
 
-.bypass-button:hover {
+.button:hover {
     background-color: #1F51FF;
     transform: scale(1.05);
 }
 
-.bypass-button.clicked {
+.button.clicked {
     background-color: #ff5148;
     transform: scale(0.95);
 }
