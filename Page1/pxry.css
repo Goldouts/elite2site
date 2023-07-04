@@ -1,0 +1,32 @@
+* {
+    color: white;
+    font-family: arial;
+    text-align: center;
+}
+
+.bypass-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bypass-button {
+    width: 220px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #1F51FF;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    transition: background-color 500ms, transform 500ms;
+}
+
+.bypass-button:hover {
+    background-color: #1F51FF;
+    transform: scale(1.05);
+}
+
+.bypass-button.clicked {
+    background-color: #ff5148;
+    transform: scale(0.95);
+}
