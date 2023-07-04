@@ -4,8 +4,8 @@ var url = "https://holyubofficial.net";
 if (url) {
     var win;
 
-    var bypassButton = document.querySelector('.bypass-button');
-    bypassButton.addEventListener('click', function() {
+    var button = document.querySelector('.button');
+    button.addEventListener('click', function() {
         if (win) {
             win.focus();
         } else {
@@ -20,7 +20,8 @@ if (url) {
             iframe.src = url;
             win.document.body.appendChild(iframe);
         }
-        bypassButton.classList.add('clicked');
-        bypassButton.innerHTML = "PRXXY LOADED!";
+        button.classList.add('clicked');
+        button.innerHTML = "Loaded!";
     });
 }
+
