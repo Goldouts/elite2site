@@ -41,6 +41,15 @@
   transform: scale(0.95);
 }
 
+.button.loaded {
+  background-color: #ff5148;
+  transform: scale(0.95);
+}
+
+.button.loaded::after {
+  content: "LOADED!";
+}
+
 .button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
@@ -62,4 +71,3 @@
 .button:hover::before {
   opacity: 1;
 }
-
