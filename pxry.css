@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -14,8 +14,8 @@
 
 .button {
   display: inline-block;
-  padding: 16px 32px;
-  font-size: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 30px;
@@ -39,16 +39,6 @@
 .button:active {
   background-color: #0e2e84;
   transform: scale(0.95);
-  color: #fff;
-}
-
-.button.loaded {
-  background-color: #ff5148;
-  color: #fff;
-}
-
-.button.loaded::after {
-  content: "LOADED";
 }
 
 .button:disabled {
