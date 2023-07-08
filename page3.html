@@ -90,63 +90,121 @@
 </html>
 
         
-        
 <html>
 <head>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
     
-    .image-button {
-      position: fixed;
-      left: 20%;
-      bottom: 500px;
-      transform: translateX(-50%);
-      cursor: pointer;
-      border: none;
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll; /* Enable vertical scrolling */
+    }
+    
+    .menu-container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       font-family: 'Montserrat', sans-serif;
+      margin-top: 200px; /* Adjust the margin from the top */
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px; /* Adjust the spacing between rows */
+    }
+
+    .image-button {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px; /* Adjust the spacing between buttons */
+      transition: transform 0.3s ease-in-out;
     }
 
     .image-button img {
       width: 100px;
       height: auto;
-      transition: transform 0.3s ease-in-out;
     }
 
-    .image-button img:hover {
+    .image-button:hover {
       transform: scale(1.1);
     }
 
     .image-button span {
-      margin-top: 50px;
-      font-size: 14px;
+      margin-top: 10px; /* Adjust the spacing between the image and the text */
+      font-size: 16px;
       font-weight: 700;
       text-decoration: none;
       color: black;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .image-button:hover span {
+      text-decoration: none;
+      color: #333; /* Change the text color on hover */
     }
 
     .more-features {
-      position: fixed;
-      left: 50%;
-      top: calc(300px - 50px - 24px); /* Adjust the value to position the text */
-      transform: translateX(-50%);
-      font-family: 'Montserrat', sans-serif;
-      font-size: 50px;
+      font-size: 60px;
       font-weight: 700;
       text-align: center;
+      margin-bottom: 20px; /* Adjust the spacing between the title and buttons */
+    }
+    
+    /* Additional Styles */
+    a.image-button {
+      text-decoration: none; /* Remove underline */
+    }
+    
+    a.image-button:focus,
+    a.image-button:active {
+      outline: none; /* Remove focus/active outline */
+    }
+    
+    img {
+      border: 0; /* Remove border from all images */
     }
   </style>
 </head>
 <body>
-  <div class="more-features">
-    More Features!
+  <div class="menu-container">
+    <div class="more-features">
+      More Features!
+    </div>
+
+    <div class="button-row">
+      <a href="chatroom.html" class="image-button">
+        <img src="images/Chatroom.png" alt="Chatroom">
+        <span>Chatroom</span>
+      </a>
+      <!-- Add additional buttons here -->
+      <a href="#" class="image-button">
+        <img src="images/Button2.png" alt="Button 2">
+        <span>Button 2</span>
+      </a>
+      <a href="#" class="image-button">
+        <img src="images/Button3.png" alt="Button 3">
+        <span>Button 3</span>
+      </a>
+    </div>
+
+    <!-- Add additional button rows here -->
+    <div class="button-row">
+      <a href="#" class="image-button">
+        <img src="images/Button4.png" alt="Button 4">
+        <span>Button 4</span>
+      </a>
+      <a href="#" class="image-button">
+        <img src="images/Button5.png" alt="Button 5">
+        <span>Button 5</span>
+      </a>
+    </div>
   </div>
-  
-  <a href="chatroom.html" class="image-button">
-    <img src="images/Chatroom.png" alt="Chatroom">
-    <span>Chatroom</span>
-  </a>
 </body>
 </html>
+
+
