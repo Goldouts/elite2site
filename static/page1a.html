@@ -1,0 +1,190 @@
+ <link rel="website icon" type="png"
+href="/images/logo.png"
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2088040631576699"
+     crossorigin="anonymous"></script>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite2Site</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+</head>
+<body>
+    <nav>
+        <img src="/images/logo.png" alt="logo">
+        <h1>Elite2Site</h1>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/page1.html">Proxy</a></li>
+            <li><a href="/page2.html">Games</a></li>
+            <li><a href="/page3.html">More</a></li>
+          <li><a href="/page3.html">...</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+
+
+  <html>
+  <head>
+    <title>Toggle Dark Mode Button</title>
+    <style>
+      /* Default styles */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      /* Button styles */
+      .dark-mode-button {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 999;
+      }
+
+      /* Button styles on scroll */
+      .dark-mode-button.scroll {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #111;
+        color: #fff;
+      }
+    </style>
+    <script>
+      // JavaScript to toggle the "scroll" class on the button
+      window.addEventListener("scroll", function() {
+        var button = document.querySelector(".dark-mode-button");
+        var scrollPosition = window.scrollY;
+        if (scrollPosition > 100) {
+          button.classList.add("scroll");
+        } else {
+          button.classList.remove("scroll");
+        }
+      });
+
+      // JavaScript to toggle dark mode
+      function toggleDarkMode() {
+        var body = document.querySelector("body");
+        body.classList.toggle("dark-mode");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Toggle Dark Mode Button -->
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+     </body>
+</html>
+
+
+<html>
+<body>
+    
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        /* Center the container */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffffff; /* Adjust the background color as needed */
+        }
+
+        /* Styling for the search container */
+        .search-container {
+            text-align: center;
+        }
+
+        /* Styling for the search form */
+        .form__input {
+            margin-top: 20px;
+            padding: 10px;
+            width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: width 0.3s ease;
+        }
+
+        /* Style the input on focus */
+        .form__input:focus {
+            outline: none;
+            width: 500px;
+        }
+
+        /* Style the error message */
+        #uv-error {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Style the error code */
+        #uv-error-code {
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+
+        /* Styling for the text headers */
+        .text-header {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .text-footer {
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <div class="text-header">Proxy</div>
+        <form id="uv-form">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Search Google or type a URL" class="form__input"/>
+        </form>
+        <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+        </div>
+        <div class="text-footer">I had to modify Ultraviolet for this to work lol, and its fast asf</div>
+    </div>
+    
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="error.js" defer></script>
+</body>
+</html>
+
