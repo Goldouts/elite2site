@@ -1,13 +1,16 @@
+<link rel="website icon" type="png"
+href="images/logo.png"
+
 <html>
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2088040631576699"
+     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite2Site</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2088040631576699"
-     crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -89,61 +92,67 @@
      </body>
 </html>
 
+<style>
+  .play-button {
+    background-color: blue; /* Change this to the desired color */
+  }
+</style>
 
-   <div class="featured">
-  <h1 style="color: white; background-color: rgba(0, 0, 0, 0.2); text-align: center; border: none;">Popular:</h1>
-  <div class="column">
-    <a href="games/bob-the-robber-2/">
-      <img src="images/bob-the-robber-2.png">
-      <div class="play-button">
-        <i class="fa-solid fa-play"></i>
-      </div>
-    </a>
-    <a href="games/vex7/">
-      <img src="images/vex7.jpeg">
-      <div class="play-button">
-        <i class="fa-solid fa-play"></i>
-      </div>
-    </a>
-  </div>
-  <div class="row">
-    <a href="games/vex6">
-      <img src="images/vex6.jpeg">
-      <div class="play-button">
-        <i class="fa-solid fa-play"></i>
-      </div>
-    </a>
-  </div>
-  <div class="row">
-    <a href="games/drive-mad/">
-      <img src="images/drive-mad.jpg">
-      <div class="play-button">
-        <i class="fa-solid fa-play"></i>
-      </div>
-    </a>
-  </div>
-  <div class="column">
-    <a href="games/moto-x3m/">
-      <img src="images/moto-x3m.jpg">
-      <div class="play-button">
-        <i class="fa-solid fa-play"></i>
-      </div>
-    </a>
-    <a href="games/retro-bowl/">
-      <img src="images/retro-bowl.jpg">
-      <div class="play-button">
-        <i class="fa-solid fa-play"></i>
-      </div>
-    </a>
-  </div>
-</div>
+<style>
+  .featured {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .grid-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .grid-item {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in;
+  }
+
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<div class="featured">
+  <h1 style="color: white; background-color: rgba(0, 0, 0, 0.2); text-align: center; border: none;">Games:</h1>
+
 
 <div class="content">
   <hr>
   <div class="search">
-    <input type="text" placeholder="Search..." oninput="">
+    <input type="text" placeholder="Search..." onfocus="animateSearchBar(true)" onblur="animateSearchBar(false)">
     <button><i class="fas fa-search"></i></button>
   </div>
+</div>
+<script src="search.js"></script>
+
+
+
+
+
   <div id="games">
         <a href="games/bob-the-robber-2/"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
         <a href="games/vex7/"><img src="images/vex7.jpeg" alt="vex 7"></a>
@@ -192,6 +201,7 @@
                         <a href="games/drift-boss/"><img src="images/driftbross.png" alt="driftboss">
                 <a href="games/Dogeminer2/"><img src="images/dodgeminer2.jpg" alt="dogeminer2">
                 <a href="games/cars-simulator/"><img src="images/car.png" alt="cars-simulator">
+                     <a href="games/Roblox/index.html"><img src="images/roblox.png" alt="cars-simulator">
     </div>
 </html>
 
