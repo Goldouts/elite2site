@@ -103,6 +103,30 @@ nav ul li a:hover::before {
 }
 
 
+body {
+  background-color: #f2f2f2;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
 .search {
   display: flex;
   justify-content: center;
@@ -110,51 +134,54 @@ nav ul li a:hover::before {
   user-select: none;
   margin-top: 2.5vw;
   margin-left: 1.2vw;
+  background-color: #fff;
+  padding: 0.8vw;
+  border-radius: 50px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, width 0.3s ease;
+  width: 450px; /* Adjust the width to your desired value */
 }
 
+
 .search input {
-  background-color: #222222;
+  background-color: transparent;
   border: none;
-  border-radius: 1vw 0 0 1vw;
-  color: #fff;
+  color: #000;
   font-size: 1.5vw;
-  font-weight: 600;
-  padding: 0.8vw 1.5vw;
+  padding: 0.5vw;
   font-family: 'Montserrat', sans-serif;
-  z-index: 1;
   outline: none;
-  transition: background-color 0.3s ease;
+  width: 100%; /* Take up remaining space */
+  transition: font-size 0.3s ease;
 }
 
 .search input::placeholder {
-  color: #fff;
-  font-weight: 600;
+  color: #000;
   font-size: 1.5vw;
 }
 
 .search button {
-  background-color: #fff;
+  background-color: transparent;
   border: none;
-  border-radius: 0 1vw 1vw 0;
-  color: #222222;
+  color: #000;
   font-size: 1.5vw;
-  font-weight: 600;
-  padding: 0.8vw 1vw;
+  padding: 0.8vw;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
-  z-index: 1;
-  transition: background-color 0.3s ease;
 }
 
 .search button:hover {
-  background-color: #dddddd;
+  color: #333;
 }
 
-.search input:focus,
-.search button:focus {
-  background-color: #dddddd;
+.search.active {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 700px; /* Expanded width */
 }
 
+.search.active input {
+
+}
 
 .container {
     display: flex;
@@ -284,3 +311,5 @@ nav ul li a:hover::before {
     opacity: 1;
   }
 }
+
+
