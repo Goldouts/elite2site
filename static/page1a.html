@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite2Site</title>
+    <link rel="stylesheet" href="prox.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" alt="logo">
+        <h1>Elite2Site</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">Proxy</a></li>
+            <li><a href="page2.html">Games</a></li>
+            <li><a href="page3.html">More</a></li>
+            <li><a href="page3.html">...</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <!-- Your page content goes here -->
+    </div>
+
+    <!-- Toggle Dark Mode Button -->
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <script src="prox2.js"></script>
+</body>
+</html>
+
+<html>
+<body>
+    
+    
+    <form id="uv-form"">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
+          </form>
+          <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+          </div>
+         <a href="https://discord.gg/zJhPJYJCeJ" target="_blank" class="fa-brands fa-discord"></a>
+         <a href="https://github.com/TheTIW/UV-Static" target="_blank"class="fa-brands fa-github"></a>
+         <a href="https://starttiw.org" target="_blank"class="fa-solid fa-cloud"></a>
+      </div>
+      <script src="uv/uv.bundle.js" defer></script>
+      <script src="uv/uv.config.js" defer></script>
+      <script src="register-sw.js" defer></script>
+      <script src="search.js" defer></script>
+      <script src="index.js" defer></script>
+      <script src="error.js" defer></script>
+      <div id="footer">
+         <p>&copy; 2023 TIW. All rights reserved.</p>
+    
+    </body>
+</html>
