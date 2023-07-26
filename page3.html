@@ -28,7 +28,6 @@ href="images/logo.png"
         
 
         
-<html>
 <head>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -37,6 +36,7 @@ href="images/logo.png"
       margin: 0;
       padding: 0;
       overflow-y: scroll; /* Enable vertical scrolling */
+      color: white; /* Set text color to white */
     }
     
     .menu-container {
@@ -66,6 +66,7 @@ href="images/logo.png"
     .image-button img {
       width: 100px;
       height: auto;
+      border: none; /* Remove image border */
     }
 
     .image-button:hover {
@@ -77,13 +78,13 @@ href="images/logo.png"
       font-size: 16px;
       font-weight: 700;
       text-decoration: none;
-      color: black;
+      color: white; /* Set text color to white */
       transition: color 0.3s ease-in-out;
     }
 
     .image-button:hover span {
       text-decoration: none;
-      color: #333; /* Change the text color on hover */
+      color: #ccc; /* Change the text color on hover */
     }
 
     .more-features {
@@ -101,10 +102,6 @@ href="images/logo.png"
     a.image-button:focus,
     a.image-button:active {
       outline: none; /* Remove focus/active outline */
-    }
-    
-    img {
-      border: 0; /* Remove border from all images */
     }
   </style>
 </head>
@@ -193,3 +190,82 @@ href="images/logo.png"
 </body>
 </html>
     
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract Blue Circles Background</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #121c35;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #00b0ff;
+            opacity: 0.8;
+            animation: pulsate 4s infinite alternate, moveAround 10s infinite linear;
+            pointer-events: none; /* Prevent circles from capturing mouse events */
+            z-index: -1; /* Set lower z-index to make circles appear behind other elements */
+        }
+
+        @keyframes pulsate {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes moveAround {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50%, 50%);
+            }
+            50% {
+                transform: translate(100%, 0);
+            }
+            75% {
+                transform: translate(50%, -50%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const numCircles = 100;
+
+        function createCircles() {
+            for (let i = 0; i < numCircles; i++) {
+                const circle = document.createElement('div');
+                circle.classList.add('circle');
+                circle.style.width = circle.style.height = randomInRange(20, 80) + 'px';
+                circle.style.left = randomInRange(0, window.innerWidth) + 'px';
+                circle.style.top = randomInRange(0, window.innerHeight) + 'px';
+                circle.style.animationDelay = randomInRange(0, 4) + 's';
+                document.body.appendChild(circle);
+            }
+        }
+
+        function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        createCircles();
+    </script>
+</body>
+</html>
